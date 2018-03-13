@@ -1,6 +1,6 @@
-### Æwiczenie 1
-### Wygenerowaæ 10,000 œcie¿ek procesu Wienera na przedziale [0,1] ze 100 równymi krokami symulacji
-### Narysowaæ 10 pierwszych œcie¿ek
+### Ä†wiczenie 1
+### WygenerowaÄ‡ 10,000 Å›cieÅ¼ek procesu Wienera na przedziale [0,1] ze 100 rÃ³wnymi krokami symulacji
+### NarysowaÄ‡ 10 pierwszych Å›cieÅ¼ek
 
 n_paths = 10000
 n_steps = 100
@@ -19,9 +19,9 @@ matplot(t(paths[1:10,]),type='l')
 grid()
 
 
-### Æwiczenie 2
-### Wygenerowaæ 10,000 œcie¿ek procesu Wienera na przedziale [0,1] ze 100 równymi krokami symulacji 
-### u¿ywaj¹c funkcji cumsum i apply. Narysowaæ 10 pierwszych œcie¿ek.
+### Ä†wiczenie 2
+### WygenerowaÄ‡ 10,000 Å›cieÅ¼ek procesu Wienera na przedziale [0,1] ze 100 rÃ³wnymi krokami symulacji 
+### uÅ¼ywajÄ…c funkcji cumsum i apply. NarysowaÄ‡ 10 pierwszych Å›cieÅ¼ek.
 
 n_paths = 10000
 n_steps = 100
@@ -37,12 +37,12 @@ matplot(t(paths[1:10,]),type='l')
 grid()
 
 
-### Æwiczenie 3
-### Wygenerowaæ 10,000 œcie¿ek geometrycznego ruchu Browna (model Blacka-Scholesa) na przedziale [0,3] 
-### (do trzech lat) z 12 krokami symulacji na rok trzema metodami (dok³adna dyskretyzacja, 
-### schemat Eulera i schemat Milsteina)  na podstawie tych samych próbek z rozk³adu normalnego. 
-### Przyj¹æ r=0.02, sigma=0.25.
-### Porównaæ pierwsze œcie¿ki uzyskane ka¿d¹ z metod na jednym rysunku.
+### Ä†wiczenie 3
+### WygenerowaÄ‡ 10,000 Å›cieÅ¼ek geometrycznego ruchu Browna (model Blacka-Scholesa) na przedziale [0,3] 
+### (do trzech lat) z 12 krokami symulacji na rok trzema metodami (dokÅ‚adna dyskretyzacja, 
+### schemat Eulera i schemat Milsteina)  na podstawie tych samych prÃ³bek z rozkÅ‚adu normalnego. 
+### PrzyjÄ…Ä‡ r=0.02, sigma=0.25.
+### PorÃ³wnaÄ‡ pierwsze Å›cieÅ¼ki uzyskane kaÅ¼dÄ… z metod na jednym rysunku.
 
 n_paths = 10000
 T = 3
@@ -54,7 +54,7 @@ r = 0.02
 sigma = 0.25
 
 N = matrix(rnorm(n_paths*n_steps,mean=0,sd=1),n_paths,n_steps)
-paths1 = matrix(nrow=n_paths,ncol=n_steps+1,S0)   #dok³adna dyskretyzacja
+paths1 = matrix(nrow=n_paths,ncol=n_steps+1,S0)   #dokÅ‚adna dyskretyzacja
 paths2 = matrix(nrow=n_paths,ncol=n_steps+1,S0)	  #schemat Eulera
 paths3 = matrix(nrow=n_paths,ncol=n_steps+1,S0)   #schemat Milsteina
 
@@ -74,11 +74,11 @@ lines(t,paths3[1,],type='l',col="green")
 grid()
 
 
-### Æwiczenie 4
-### Wygenerowaæ 10,000 œcie¿ek procesu CIR (patrz notatki z zajêæ) na przedziale [0,1] 
+### Ä†wiczenie 4
+### WygenerowaÄ‡ 10,000 Å›cieÅ¼ek procesu CIR (patrz notatki z zajÄ™Ä‡) na przedziale [0,1] 
 ### z 252 krokami symulacji (schemat Eulera i schemat Milsteina) na podstawie 
-### tych samych próbek z rozk³adu normalnego. Przyj¹æ kappa=10.0, theta=0.03, r0=0.05, sigma=0.25.
-### Porównaæ pierwsze œcie¿ki uzyskane ka¿d¹ z metod na jednym rysunku.
+### tych samych prÃ³bek z rozkÅ‚adu normalnego. PrzyjÄ…Ä‡ kappa=10.0, theta=0.03, r0=0.05, sigma=0.25.
+### PorÃ³wnaÄ‡ pierwsze Å›cieÅ¼ki uzyskane kaÅ¼dÄ… z metod na jednym rysunku.
 
 n_paths = 10000
 T = 1
@@ -108,10 +108,10 @@ lines(t,paths2[1,],type='l',col="blue")
 grid()
 
 
-### Æwiczenie 5
-### Wygenerowaæ 10,000 œcie¿ek dwóch skorelowanych procesów Wienera na przedziale [0,2] 
-### z 252 krokami symulacji w roku i korelacj¹ 0.9.
-### Narysowaæ pierwsze œcie¿ki obydwu procesów na jednym rysunku.
+### Ä†wiczenie 5
+### WygenerowaÄ‡ 10,000 Å›cieÅ¼ek dwÃ³ch skorelowanych procesÃ³w Wienera na przedziale [0,2] 
+### z 252 krokami symulacji w roku i korelacjÄ… 0.9.
+### NarysowaÄ‡ pierwsze Å›cieÅ¼ki obydwu procesÃ³w na jednym rysunku.
 
 n_paths = 10000
 T = 2
@@ -140,10 +140,10 @@ lines(t, paths_W2[1,],type='l', col="green")
 grid()
 
 
-### Æwiczenie 6
-### Wygenerowaæ 100 œcie¿ek trzech skorelowanych procesów Wienera na przedziale [0,1] 
+### Ä†wiczenie 6
+### WygenerowaÄ‡ 100 Å›cieÅ¼ek trzech skorelowanych procesÃ³w Wienera na przedziale [0,1] 
 ### z 252 krokami symulacji w roku i korelacjami rho(W1,W2=0.9, rho(W1,W3)=-0.7, rho(W2,W3)=-0.7.
-### Narysowaæ pierwsze œcie¿ki trzech procesów na jednym rysunku.
+### NarysowaÄ‡ pierwsze Å›cieÅ¼ki trzech procesÃ³w na jednym rysunku.
 
 library(MASS)
 
@@ -157,7 +157,7 @@ rho13 = -0.7
 rho23 = -0.7
 
 corr_matrix = matrix(c(1,rho12,rho13,rho12,1,rho23,rho13,rho23,1),3,3)
-mN = t(mvrnorm(n_paths*n_steps,rep(0,3),corr_matrix))   #generowanie próbek z wielowymiarowego rozk³adu normalnego
+mN = t(mvrnorm(n_paths*n_steps,rep(0,3),corr_matrix))   #generowanie prÃ³bek z wielowymiarowego rozkÅ‚adu normalnego
 
 dt = 1/n_steps
 
@@ -181,10 +181,9 @@ lines(t, paths_W3[1,],type='l', col="blue")
 grid()
 
 
-### Æwiczenie 7 (dodatkowe - do domu)
-### Dowoln¹ metod¹ wygenerowaæ 10,000 œcie¿ek cen akcji w modelu Hestona do 1 roku z 252 krokami symulacji:
-### dXt = (r*St)dt + (sqrt(vt)*St)dWt_1 (proces cen akcji - geometryczny ruch Browna ze stochastyczn¹ wariancj¹)
+### Ä†wiczenie 7 (dodatkowe - do domu)
+### DowolnÄ… metodÄ… wygenerowaÄ‡ 10,000 Å›cieÅ¼ek cen akcji w modelu Hestona do 1 roku z 252 krokami symulacji:
+### dXt = (r*St)dt + (sqrt(vt)*St)dWt_1 (proces cen akcji - geometryczny ruch Browna ze stochastycznÄ… wariancjÄ…)
 ### dvt = kappa*(theta-vt)dt + (sigma*sqrt(vt))dWt_2 (proces stochastycnej wariancji - CIR)
-### Wt_1 i Wt_2 s¹ dwoma procesami Wienera skorelowanymi z korelacj¹ -0.75
-### Przyj¹c r=0.05, kappa=1.2, theta = 0.25, sigma = 0.6
-
+### Wt_1 i Wt_2 sÄ… dwoma procesami Wienera skorelowanymi z korelacjÄ… -0.75
+### PrzyjÄ…c r=0.05, kappa=1.2, theta = 0.25, sigma = 0.5
